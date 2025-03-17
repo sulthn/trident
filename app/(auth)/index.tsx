@@ -30,11 +30,19 @@ export default function Login() {
                     Login
                 </ThemedText>
             </View>
-            <Pressable onPressIn={() => {setbc('#ffffffff')}} onLongPress={() => {router.replace("/(main)")}} style={{flex: 1,}}>
-                <MaterialIcons style={{
-                    fontWeight: "light",
-                    backgroundColor: bc
-                }} name="fingerprint" size={60} color={useThemeColor({}, "icon")} />
+            <Pressable 
+                onPressIn={() => {setbc('#ffffff')}}
+                onPressOut={() => {setbc("#ffffff00")}}
+                onLongPress={() => {router.replace("/(main)")}} 
+                style={{flex: 1,}}>
+                    <MaterialIcons style={{
+                        borderRadius: 25,
+                        fontWeight: "light",
+                        backgroundColor: bc
+                    }} 
+                    name="fingerprint" 
+                    size={60} 
+                    color={useThemeColor({}, "icon")} />
             </Pressable>
         </ThemedView>
   );
