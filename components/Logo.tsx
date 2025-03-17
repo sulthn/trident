@@ -1,5 +1,6 @@
 import { Image, View } from "react-native"
-import { ThemedText } from "./ThemedText"
+import { ThemedText, ThemedTextProps } from "@/components/ThemedText"
+import { useThemeColor } from "@/hooks/useThemeColor";
 
 
 export function TRIDENTLogo() {
@@ -9,12 +10,12 @@ export function TRIDENTLogo() {
             alignItems: "center"
         }}>
             <Image source={require('@/assets/images/trident_transparent.png')} style={{ alignSelf: 'center', width: 80, height: 80 }} />
-            <ThemedText style={{
-                fontFamily: "SplineSans",
-                paddingTop: 20,
-                fontSize: 50,
-                fontWeight: 'bold',
-                lineHeight: 50,}}>
+            <ThemedText type="title" style={{
+                fontSize: 60,
+                lineHeight: 60 * 1.5,
+                includeFontPadding: false,
+                textAlignVertical: "center"
+                }}>
                     TRIDENT
         </ThemedText>
         </View>

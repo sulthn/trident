@@ -12,7 +12,10 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
     const colorScheme = useColorScheme();
     const [loaded] = useFonts({
-        SplineSans: require('../assets/fonts/SplineSans-VariableFont_wght.ttf'),
+        'Spline Sans': require('../assets/fonts/SplineSans/SplineSans-Regular.ttf'),
+        'Spline Sans-Light': require('../assets/fonts/SplineSans/SplineSans-Light.ttf'),
+        'Spline Sans-Bold': require('../assets/fonts/SplineSans/SplineSans-Bold.ttf'),
+        'Spline Sans-SemiBold': require('../assets/fonts/SplineSans/SplineSans-SemiBold.ttf')
     });
 
     useEffect(() => {

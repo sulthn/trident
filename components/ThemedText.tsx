@@ -35,24 +35,26 @@ export function ThemedText({
 
 const styles = StyleSheet.create({
   default: {
+    fontFamily: "Spline Sans",
     fontSize: 16,
     lineHeight: 24,
   },
   defaultSemiBold: {
+    fontFamily: "Spline Sans-SemiBold",
     fontSize: 16,
     lineHeight: 24,
-    fontWeight: '600',
   },
   title: {
+    fontFamily: "Spline Sans-Bold",
     fontSize: 32,
-    fontWeight: 'bold',
     lineHeight: 32,
   },
   subtitle: {
+    fontFamily: "Spline Sans-Bold",
     fontSize: 20,
-    fontWeight: 'bold',
   },
   link: {
+    fontFamily: "Spline Sans",
     lineHeight: 30,
     fontSize: 16,
     color: '#0a7ea4',

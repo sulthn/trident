@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "trident",
+    "name": "Trident",
     "slug": "trident",
     "version": "0.1.0",
     "orientation": "portrait",
@@ -12,7 +12,7 @@
       "supportsTablet": false
     },
     "android": {
-      "package": "com.sulthn.trident"
+      "package": "com.sulthn.Trident"
     },
     "web": {
       "bundler": "metro",
@@ -25,10 +25,11 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/trident_full.png",
-          "imageWidth": 400,
-          "resizeMode": "contain",
+          "imageWidth": 200,
+          "resizeMode": "cover",
           "backgroundColor": "#ffffff",
           "dark": {
+            "image": "./assets/images/trident_full.png",
             "backgroundColor": "#000000"
           }
         }

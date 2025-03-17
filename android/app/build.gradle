@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.sulthn.trident'
+    namespace 'com.sulthn.Trident'
     defaultConfig {
-        applicationId 'com.sulthn.trident'
+        applicationId 'com.sulthn.Trident'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

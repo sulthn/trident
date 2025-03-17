@@ -1,4 +1,4 @@
-package com.sulthn.trident
+package com.sulthn.Trident
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

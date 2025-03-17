@@ -27,6 +27,7 @@
         <data android:scheme="myapp"/>
         <data android:scheme="com.sulthn.trident"/>
         <data android:scheme="exp+trident"/>
+        <data android:scheme="com.sulthn.Trident"/>
       </intent-filter>
     </activity>
   </application>

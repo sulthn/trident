@@ -1,4 +1,4 @@
-package com.sulthn.trident
+package com.sulthn.Trident
 
 import android.app.Application
 import android.content.res.Configuration

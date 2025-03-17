@@ -1,3 +1,4 @@
+import { ThemedText } from "@/components/ThemedText";
 import { Text, View } from "react-native";
 
 export default function Login() {
@@ -9,7 +10,7 @@ export default function Login() {
         alignItems: "center",
       }}
     >
-      <Text>meow</Text>
+      <ThemedText>meow</ThemedText>
     </View>
   );
 }
