@@ -5,6 +5,8 @@ import { Children } from "react";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+// INTERNAL
+
 const storeData = async (key: string, value: any) => {
   try {
     const jsonValue = JSON.stringify(value);
@@ -33,15 +35,23 @@ export const addWidgetEntry = async (widgets: ServerWidget[]) => {
   entry.widget_idx = entry.widget_idx + widgets.length;
   entry.widgets = entry.widgets.concat(widgets);
   storeData("@widget_key", entry);
+
+  console.log(await getData("@widget_key"));
 };
 
 export const resetWidgetEntry = async () => {
   storeData("@widget_key", { widget_idx: 0, widgets: [] });
 };
 
+// TYPES
+
+export interface Server {
+  id: number;
+  name: string;
+}
+
 export interface ServerWidget {
   id: number;
-  serverName: string;
   graph: boolean;
 }
 
@@ -49,6 +59,8 @@ interface ServerWidgetStore {
   widget_idx: number;
   widgets: ServerWidget[];
 }
+
+// ELEMENTS
 
 export function ServerWidgetContainter() {
   const [widgets, setWidgets] = useState();
